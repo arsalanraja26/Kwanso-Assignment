@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_detail_height"
+        android:layout_margin="@dimen/pre_list_margin"
+        android:elevation="2dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/item_name_margin"
+                android:gravity="start"
+                android:text="@string/static_shopping"
+                android:textSize="@dimen/item_name_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.3" />
+
+
+            <TextView
+                android:id="@+id/item_amount_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/item_name_margin"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="@dimen/timestampe_margin"
+                android:gravity="center"
+                android:inputType="datetime"
+                android:text="@string/total_amount_txt"
+                android:textSize="@dimen/status_txt_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TextViewEdits" />
+
+            <TextView
+                android:id="@+id/item_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/timestampe_margin"
+                android:gravity="start"
+                android:inputType="datetime"
+                android:text=""
+                android:textSize="@dimen/status_txt_size"
+                app:layout_constraintStart_toEndOf="@+id/item_amount_txt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:maxLines="1"
+                app:layout_constraintWidth_percent="0.3"
+                android:ellipsize="end"
+                tools:ignore="TextViewEdits" />
+
+            <TextView
+                android:id="@+id/created_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/timestampe_margin"
+                android:textSize="@dimen/timestamp_txt_size"
+                android:inputType="datetime"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="TextViewEdits" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

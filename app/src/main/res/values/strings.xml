@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Grocery List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="floating_todo">Add Item FB</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_enter_name">Please Enter Name</string>
+    <string name="forward">forward</string>
+    <string name="grocery_item_detail">Grocery Item Detail</string>
+    <string name="please_enter_amount">Please Enter Amount</string>
+    <string name="groceries_detail_title">Groceries Detail</string>
+    <string name="static_shopping">Shopping</string>
+    <string name="total_amount_txt">Total Amount:</string>
+    <string name="static_pending">Pending</string>
+    <string name="total_items_txt">Total Items:</string>
+</resources>
